@@ -1,0 +1,23 @@
+# This section defines the services (containers) we want to run.
+services:
+  # We're naming our database service 'db'.
+  db:
+    # Use the official PostgreSQL image, version 15.
+    image: postgres:15
+    # Always restart the container if it stops.
+    restart: always
+    # Environment variables to configure the PostgreSQL instance.
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: bookstore_dev
+    # Map port 5432 on your local machine to port 5432 inside the container.
+    ports:
+      - '5432:5432'
+    # This ensures that your data persists even if you remove the container.
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+# This defines the named volume used above.
+volumes:
+  postgres_data:

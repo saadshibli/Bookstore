@@ -99,8 +99,9 @@ This is where the team will work on different parts of the API simultaneously. E
 
 
 ---
-##Step 1:
-For Saad & Himanshu: Your first action is to sync up with Anurag to finalize the User, Product, and Order models. Once that's clear, you can create your respective feature branches from develop and begin building your initial API endpoints.
+## **Step 1:**
+
+* For Saad & Himanshu: Your first action is to sync up with Anurag to finalize the User, Product, and Order models. Once that's clear, you can create your respective feature branches from develop and begin building your initial API endpoints.
 
 For Anurag: Your top priority is the foundational work. Get the initial AWS services running and then tackle the feature/auth-api. The team's progress will build upon this core service.
 
